@@ -288,7 +288,7 @@ class MinimumFinderWindow(tk.Toplevel):
         self.pairs_frame = ttk.Frame(settings)
         self.pairs_frame.pack(side='left',padx=(0,8))
         self.pairs_var = self._spin(self.pairs_frame, "Pairs (K):", self.npairs, 5, 60)
-        CreateToolTip(self.pairs_frame,text=autowrap('Number of pairs that are linearly interolated to compute S, represented as K in the plot. Ideally, this value is close to the number of pairs in rnage, however, '
+        CreateToolTip(self.pairs_frame,text=autowrap('Number of pairs that are linearly interolated to compute S, represented as K in the plot. Ideally, this value is close to the number of pairs in range, however, '
                                                      'this primarily effects the absolute size of S, not the shape of S. Since the error is calculated using the shape of S, the number of pairs has minimal effect on the results.'
                                                      ,width=50))
         
